@@ -31,22 +31,23 @@ pip install numpy pandas matplotlib seaborn nltk wordcloud tensorflow scikit-lea
 
 1. Import Libraries: Import necessary libraries for data exploration, preprocessing, and model building.
 2. Load and Preprocess Data:
-  - Load the dataset and examine its structure.
-  - Convert email categories to binary labels (1 for spam, 0 for non-spam).
-  - Balance the dataset by downsampling the majority class (ham).
+    - Load the dataset and examine its structure.
+    - Convert email categories to binary labels (1 for spam, 0 for non-spam).
+    - Balance the dataset by downsampling the majority class (ham).
 3. Text Preprocessing:
-  - Remove stopwords from the email messages.
-  - Generate word clouds for spam and non-spam emails to visualize the most frequent words.
-  - Data Preparation:
+    - Remove stopwords from the email messages.
+    - Generate word clouds for spam and non-spam emails to visualize the most frequent words.
+    - Data Preparation:
 4. Split the data into training and testing sets.
-  - Tokenize and pad the text sequences to ensure uniform input length for the model.
+    - Tokenize and pad the text sequences to ensure uniform input length for the model.
 5. Model Building:
-  - Build an LSTM-based Sequential model using TensorFlow/Keras.
-  - Compile the model with binary cross-entropy loss and Adam optimizer.
-  - Train the model with early stopping and learning rate reduction callbacks.
+    - Build an LSTM-based Sequential model using TensorFlow/Keras.
+    - Compile the model with binary cross-entropy loss and Adam optimizer.
+    - Train the model with early stopping and learning rate reduction callbacks.
 6. Evaluation:
-  - Evaluate the model's performance on the test set.
-  - Plot training and validation accuracy over epochs.
+    - Evaluate the model's performance on the test set.
+    - Plot training and validation accuracy over epochs.
 
 ## Results
+
 The model's performance will be displayed in terms of test loss and accuracy. Training and validation accuracy plots will also be generated to help visualize the model's learning process.
